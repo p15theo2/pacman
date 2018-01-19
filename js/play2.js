@@ -484,7 +484,7 @@ var play2State = {
                 
             if (this.dots.total === 0)
             {
-                this.dots.callAll('revive');
+                game.state.start('gameover');
                 
             }
             this.score++;
